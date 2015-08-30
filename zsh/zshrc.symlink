@@ -5,7 +5,7 @@ export DOTFILES=$HOME/.dotfiles
 export PROJECTS=~/Code
 
 # load zgen
-source $DOTFILES/zgen/zgen.zsh
+source $DOTFILES/_zgen/zgen.zsh
 if ! zgen saved; then
     echo "Creating a zgen save"
 
@@ -56,7 +56,7 @@ do
 done
 
 # load everything but the path and completion files
-for file in ${${config_files:#*/path.zsh}:#*/completion.zsh}
+for file in ${${${${config_files:#*/path.zsh}:#*/completion.zsh}:#$DOTFILES/_*/*.zsh}:#$DOTFILES/*.symlink/*.zsh}
 do
   source $file
 done

@@ -1,4 +1,4 @@
-[submodule "zgen"]
-	path = zgen
+[submodule "_zgen"]
+	path = _zgen
 	url = https://github.com/tarjoilija/zgen.git
 	branch = master
