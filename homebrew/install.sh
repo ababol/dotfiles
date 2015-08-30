@@ -18,10 +18,18 @@ then
   then
     ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/linuxbrew/go/install)"
   fi
-  
+
 fi
 
 # Install homebrew packages
 brew install grc coreutils spark
+brew install caskroom/cask/brew-cask
+brew tap caskroom/versions
+brew cask install alfred --appdir="/Applications"
+brew cask install sublime-text3 --appdir="/Applications"
+brew cask install google-chrome --appdir="/Applications"
+brew cask install xtrafinder --appdir="/Applications"
+brew cask install iterm2 --appdir="/Applications"
+brew cask alfred link
 
 exit 0

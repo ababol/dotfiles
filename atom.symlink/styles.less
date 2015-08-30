@@ -1,0 +1,51 @@
+/*
+ * Your Stylesheet
+ *
+ * This stylesheet is loaded when Atom starts up and is reloaded automatically
+ * when it is changed.
+ *
+ * If you are unfamiliar with LESS, you can read more about it here:
+ * http://www.lesscss.org
+ */
+@import "syntax-variables";
+// @import "material-syntax/styles/syntax-variables";
+
+@syntax-background-color: #FFFFFF;
+
+atom-text-editor {
+  // INDENT COLOR
+  .indent-guide-improved {
+    width: 1px;
+    z-index: 100;
+    position: absolute;
+  }
+
+  .indent-guide-improved.indent-guide-stack.indent-guide-active {
+    width: 1px;
+  }
+
+  .color-guides(20);
+
+  .color-guides(@total, @i:3) when (@i <= @total) {
+    .indent-guide-improved:nth-child(@{total}n + 1){
+      display: none !important;
+    }
+    .indent-guide-improved:nth-child(@{total}n + 2){
+      display: none !important;
+    }
+
+    .indent-guide-improved:nth-child(@{total}n + @{i}) {
+
+      // @indent-col: rgb(mod(@i * 20 + 50, 150), mod(@i * 2 + 50, 150), mod(@i * 100 + 50, 150));
+      @indent-col: rgba(255, 255, 255, 0.1);
+      background-color: @indent-col;
+
+      &.indent-guide-stack.indent-guide-active {
+        background-color: rgba(255, 255, 255, 0.4);
+        // background-color: lighten(saturate(@indent-col, 50%), 20%);
+      }
+    }
+
+    .color-guides(@total, (@i + 1));
+  }
+}

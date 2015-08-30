@@ -1,8 +1,41 @@
-# shortcut to this dotfiles path is $ZSH
-export ZSH=$HOME/.dotfiles
+# shortcut to this dotfiles path is $DOTFILES
+export DOTFILES=$HOME/.dotfiles
 
 # your project folder that we can `c [tab]` to
 export PROJECTS=~/Code
+
+# load zgen
+source $DOTFILES/zgen/zgen.zsh
+if ! zgen saved; then
+    echo "Creating a zgen save"
+
+    zgen oh-my-zsh
+
+    # plugins
+    zgen oh-my-zsh plugins/git
+    zgen oh-my-zsh plugins/nyan
+    zgen oh-my-zsh plugins/brew
+    zgen oh-my-zsh plugins/osx
+    zgen oh-my-zsh plugins/sublime
+    zgen oh-my-zsh plugins/battery
+    zgen oh-my-zsh plugins/z
+    zgen oh-my-zsh plugins/atom
+    zgen oh-my-zsh plugins/sudo
+    zgen oh-my-zsh plugins/git-extras
+
+  #  zgen load jimmijj/zsh-syntax-highlighting
+    #zgen load tarruda/zsh-autosuggestions
+
+    # theme
+    zgen load mafredri/zsh-async
+    zgen load sindresorhus/pure
+
+    # save all to init script
+    zgen save
+fi
+
+# Disable oh-my-zsh fucked ls
+DISABLE_LS_COLORS=true
 
 # Stash your environment variables in ~/.localrc. This means they'll stay out
 # of your main dotfiles repository (which may be public, like this one), but
@@ -14,7 +47,7 @@ fi
 
 # all of our zsh files
 typeset -U config_files
-config_files=($ZSH/**/*.zsh)
+config_files=($DOTFILES/**/*.zsh)
 
 # load the path files
 for file in ${(M)config_files:#*/path.zsh}
