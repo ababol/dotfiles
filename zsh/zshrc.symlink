@@ -34,9 +34,6 @@ if ! zgen saved; then
     zgen save
 fi
 
-# Disable oh-my-zsh fucked ls
-DISABLE_LS_COLORS=true
-
 # Stash your environment variables in ~/.localrc. This means they'll stay out
 # of your main dotfiles repository (which may be public, like this one), but
 # you'll have access to them in your scripts.
