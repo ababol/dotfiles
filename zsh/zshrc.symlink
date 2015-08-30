@@ -23,8 +23,8 @@ if ! zgen saved; then
     zgen oh-my-zsh plugins/sudo
     zgen oh-my-zsh plugins/git-extras
 
-  #  zgen load jimmijj/zsh-syntax-highlighting
-    #zgen load tarruda/zsh-autosuggestions
+    zgen load jimmijj/zsh-syntax-highlighting
+    # zgen load tarruda/zsh-autosuggestions
 
     # theme
     zgen load mafredri/zsh-async
