@@ -1,4 +1,4 @@
-brew install zsh
+brew install zsh --appdir=/bin/zsh
 
 # CUSTOM_THEME=$HOME/.zgen/robbyrussell/oh-my-zsh-master/custom/themes
 # if [  ! -d "$CUSTOM_THEME" ] ; then
