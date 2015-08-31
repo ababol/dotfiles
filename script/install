@@ -9,3 +9,6 @@ cd "$(dirname $0)"/..
 # find the installers and run them iteratively
 find . -not \( -path ./_* -prune \) -name install.sh | while read installer ; do sh -c "${installer}" ; done
 find . -not \( -path ./_* -prune \) -name sudo_install.sh | while read installer ; do sudo sh -c "${installer}" ; done
+
+cd $DOTFILES/_termtile
+./install.sh
