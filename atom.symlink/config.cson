@@ -1,10 +1,10 @@
 "*":
   editor:
-    showIndentGuide: true
-    fontFamily: "Menlo"
+    fontFamily: "Hack"
+    softWrap: true
     invisibles: {}
-    fontSize: 15
-    softWrapAtPreferredLineLength: true
+    fontSize: 12
+    lineHeight: 1.4
   core:
     ignoredNames: [
       ".bundle"
@@ -15,8 +15,8 @@
       "vendor"
     ]
     themes: [
-      "unity-ui"
-      "glacier-syntax"
+      "atom-material-ui"
+      "material-monokai-syntax"
     ]
     hideGitIgnoredFiles: true
     disabledPackages: [
@@ -30,7 +30,17 @@
       "source.gfm"
       "text.git-commit"
     ]
+  "tree-view":
+    hideIgnoredNames: true
+  "atom-material-ui":
+    slimScrollbar: true
+    tabSize: "Small"
+    rippleAccentColor: true
+    panelContrast: true
+    compactTreeView: true
+    altCmdPalette: false
   welcome:
     showOnStartup: false
   "release-notes":
     viewedVersion: "0.89.0"
+  react: {}

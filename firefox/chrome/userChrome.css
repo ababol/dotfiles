@@ -1,0 +1,40 @@
+.bookmark-item .toolbarbutton-text {
+  display: none !important;
+}
+
+#bookmarks-ptf toolbarbutton.bookmark-item:hover .toolbarbutton-text,
+#bookmarks-ptf toolbarbutton.bookmark-item[image]:not([image=""]):not([container="true"]):hover .toolbarbutton-text,
+#bookmarks-ptf toolbarbutton.bookmark-item[container="true"]:hover .toolbarbutton-text,
+#bookmarks-ptf toolbarbutton.bookmark-item[image=""]:not([container="true"]):hover .toolbarbutton-text,
+#personal-bookmarks toolbarbutton.bookmark-item:hover .toolbarbutton-text,
+#personal-bookmarks toolbarbutton.bookmark-item[image]:not([image=""]):not([container="true"]):hover .toolbarbutton-text,
+#personal-bookmarks toolbarbutton.bookmark-item[container="true"]:hover .toolbarbutton-text,
+#personal-bookmarks toolbarbutton.bookmark-item:not([image]):not([container="true"]):hover .toolbarbutton-text,
+#personal-bookmarks toolbarbutton.bookmark-item:hover .toolbarbutton-text-shadow,
+#personal-bookmarks toolbarbutton.bookmark-item[image]:not([image=""]):not([container="true"]):hover .toolbarbutton-text-shadow,
+#personal-bookmarks toolbarbutton.bookmark-item[container="true"]:hover .toolbarbutton-text-shadow,
+#personal-bookmarks toolbarbutton.bookmark-item:not([image]):not([container="true"]):hover .toolbarbutton-text-shadow {
+  display: block !important;
+}
+
+tab {
+  background-color: #E3E4E6 !important;
+}
+tab[selected="true"] {
+  color: #545557 !important;
+  background-color: white !important;
+  box-shadow: 0px 0px 0px transparent !important;
+  border-style: solid !important;
+  border-width: 0 0 2px 0 !important;
+  border-color: #2A7CB1 !important;
+}
+.tabbrowser-tab:not(:hover) .tab-close-button{
+  display:none !important;
+}
+.tabbrowser-tab:not([pinned]):hover .tab-close-button{
+  display:block !important;
+}
+.tab-close-button{
+  padding-left: 0px !important;
+  margin-left: 0px !important;
+}
