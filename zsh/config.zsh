@@ -5,6 +5,8 @@
 # fi
 
 export LSCOLORS="exfxcxdxbxegedabagacad"
+# Blue on green -> black on green
+export LS_COLORS=$LS_COLORS:"ow=30;42"
 export CLICOLOR=true
 
 fpath=($DOTFILES/functions $fpath)

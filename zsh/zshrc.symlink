@@ -84,4 +84,3 @@ alias tcen='osascript ~/.termtile/center.scpt '
 alias tmax='osascript ~/.termtile/maximize.scpt '
 alias tsn='osascript ~/.termtile/changeScreen.scpt next'
 alias tfs='osascript ~/.termtile/fullscreen.scpt '
-
