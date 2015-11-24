@@ -1,10 +1,10 @@
 "*":
   editor:
     fontFamily: "Hack"
-    softWrap: true
     invisibles: {}
     fontSize: 12
     lineHeight: 1.4
+    softWrap: true
   core:
     ignoredNames: [
       ".bundle"
@@ -44,3 +44,5 @@
   "release-notes":
     viewedVersion: "0.89.0"
   react: {}
+  jsformat:
+    format_on_save: false

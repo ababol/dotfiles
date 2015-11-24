@@ -1,5 +1,9 @@
 # shortcut to this dotfiles path is $DOTFILES
 export DOTFILES=$HOME/.dotfiles
+export DOCKER_HOST=tcp://xprod.atemerge.com:2376
+export DOCKER_TLS_VERIFY=1s
+
+eval "$(thefuck --alias)"
 
 # your project folder that we can `c [tab]` to
 export PROJECTS=~/Code
@@ -19,7 +23,7 @@ if ! zgen saved; then
     zgen oh-my-zsh plugins/sublime
     zgen oh-my-zsh plugins/battery
     zgen oh-my-zsh plugins/z
-    zgen oh-my-zsh plugins/atom
+    #zgen oh-my-zsh plugins/atom
     zgen oh-my-zsh plugins/sudo
     zgen oh-my-zsh plugins/git-extras
 
@@ -44,7 +48,7 @@ fi
 
 # all of our zsh files
 typeset -U config_files
-config_files=($DOTFILES/**/*.zsh)
+config_files=($DOTFILES/*/*.zsh)
 
 # load the path files
 for file in ${(M)config_files:#*/path.zsh}
