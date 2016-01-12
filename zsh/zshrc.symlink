@@ -3,7 +3,7 @@ export DOTFILES=$HOME/.dotfiles
 export DOCKER_HOST=tcp://xprod.atemerge.com:2376
 export DOCKER_TLS_VERIFY=1s
 
-eval "$(thefuck --alias)"
+#eval "$(thefuck --alias)"
 
 # your project folder that we can `c [tab]` to
 export PROJECTS=~/Code

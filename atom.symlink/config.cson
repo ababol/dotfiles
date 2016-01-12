@@ -1,10 +1,10 @@
 "*":
   editor:
-    fontFamily: "Hack"
     invisibles: {}
     fontSize: 12
     lineHeight: 1.4
     softWrap: true
+    fontFamily: "Hack"
   core:
     ignoredNames: [
       ".bundle"
@@ -14,15 +14,15 @@
       "tmp"
       "vendor"
     ]
-    themes: [
-      "atom-material-ui"
-      "material-monokai-syntax"
-    ]
     hideGitIgnoredFiles: true
     disabledPackages: [
       "background-tips"
       "exception-reporting"
       "metrics"
+    ]
+    themes: [
+      "one-dark-ui"
+      "material-monokai-syntax"
     ]
   "spell-check":
     grammars: [
@@ -39,6 +39,15 @@
     panelContrast: true
     compactTreeView: true
     altCmdPalette: false
+    tabs:
+      tabMinWidth: true
+      tabSize: "Small"
+    treeView:
+      compactTreeView: true
+    ui: {}
+    fonts: {}
+    panels:
+      panelContrast: true
   welcome:
     showOnStartup: false
   "release-notes":
@@ -46,3 +55,9 @@
   react: {}
   jsformat:
     format_on_save: false
+  "tabs-to-spaces": {}
+  "one-dark-ui":
+    layoutMode: "Compact"
+  "autocomplete-python":
+    useSnippets: "all"
+  "python-jedi": {}

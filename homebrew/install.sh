@@ -30,6 +30,10 @@ brew cask install sublime-text3 --appdir="/Applications"
 brew cask install google-chrome --appdir="/Applications"
 brew cask install xtrafinder --appdir="/Applications"
 brew cask install iterm2 --appdir="/Applications"
+brew cask install spotify --appdir="/Applications"
+brew cask install cumulus --appdir="/Applications"
 brew cask alfred link
+brew install thefuck
+brew install z
 
 exit 0
