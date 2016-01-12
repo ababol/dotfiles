@@ -32,6 +32,7 @@ brew cask install xtrafinder --appdir="/Applications"
 brew cask install iterm2 --appdir="/Applications"
 brew cask install spotify --appdir="/Applications"
 brew cask install cumulus --appdir="/Applications"
+brew cask install bitbar --appdir="/Applications"
 brew cask alfred link
 brew install thefuck
 brew install z

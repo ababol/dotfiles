@@ -6,3 +6,7 @@
 	path = _termtile
 	url = https://github.com/apaszke/termtile.git
 	branch = master
+[submodule "_bitbar-plugins"]
+	path = _bitbar-plugins
+	url = https://github.com/matryer/bitbar-plugins.git
+	branch = master
