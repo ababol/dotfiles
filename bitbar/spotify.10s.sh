@@ -79,8 +79,8 @@ truncate"; return 1; }
    } || echo "${str}"
 }
 
-track_short=`truncate "$track", "15"`
-artist_short=`truncate "$artist", "12"`
+track_short=`truncate "$track" "15"`
+artist_short=`truncate "$artist" "12"`
 echo $state_icon $track_short - $artist_short
 echo "---"
 

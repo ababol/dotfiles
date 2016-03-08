@@ -1,4 +1,6 @@
 "*":
+  "atom-htmltidy":
+    formatOnSave: false
   "atom-material-ui":
     altCmdPalette: false
     compactTreeView: true
