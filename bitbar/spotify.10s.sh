@@ -81,7 +81,8 @@ truncate"; return 1; }
 
 track_short=`truncate "$track" "15"`
 artist_short=`truncate "$artist" "12"`
-echo $state_icon $track_short - $artist_short
+# echo $state_icon $track_short - $artist_short
+echo $state_icon $artist_short
 echo "---"
 
 case "$0" in

@@ -1,5 +1,3 @@
-source /usr/local/bin/virtualenvwrapper.sh
-
 # shortcut to this dotfiles path is $DOTFILES
 export DOTFILES=$HOME/.dotfiles
 export DOCKER_HOST=tcp://xprod2.atemerge.com:2376

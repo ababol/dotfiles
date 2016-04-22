@@ -23,8 +23,7 @@ fi
 
 # Install homebrew packages
 brew install grc coreutils spark
-brew install caskroom/cask/brew-cask
-brew tap caskroom/versions
+brew tap caskroom/cask
 brew cask install alfred --appdir="/Applications"
 brew cask install sublime-text3 --appdir="/Applications"
 brew cask install google-chrome --appdir="/Applications"
@@ -33,6 +32,8 @@ brew cask install iterm2-beta --appdir="/Applications"
 brew cask install spotify --appdir="/Applications"
 brew cask install cumulus --appdir="/Applications"
 brew cask install bitbar --appdir="/Applications"
+brew cask install skype --appdir="/Applications"
+brew cask install dropbox --appdir="/Applications"
 brew cask alfred link
 brew install thefuck
 brew install z
