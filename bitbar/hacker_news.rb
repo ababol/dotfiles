@@ -1,6 +1,10 @@
 #!/usr/bin/env ruby
 
-# ababol: I have just edit the title Hacker News to HN
+# <bitbar.title>Hacker News</bitbar.title>
+# <bitbar.author>Joe Canero</bitbar.author>
+# <bitbar.author.github>caneroj1</bitbar.author.github>
+# <bitbar.image>https://i.imgur.com/bghlATz.png</bitbar.image>
+
 require 'net/http'
 require 'json'
 
@@ -28,9 +32,13 @@ def interpolate(score)
 end
 
 def output(story)
-  puts story["title"] + " | color=#337ab7 | href=" + story["url"]
-  puts "Comments: #{story["descendants"]} | href=https://news.ycombinator.com/item?id=#{story["id"]} | color=black"
-  puts "Score: #{story["score"]} | color=#{interpolate(story["score"])}"
+  begin
+    puts "#{story["title"]} | href=#{story["url"]} color=#337ab7"
+    puts "Comments: #{story["descendants"]} | href=https://news.ycombinator.com/item?id=#{story["id"]} color=black"
+    puts "Score: #{story["score"]} | color=#{interpolate(story["score"])}"
+  rescue => exception
+    puts "An error occured: " + exception.to_s
+  end
   puts "---"
 end
 
@@ -38,6 +46,6 @@ puts "HN"
 puts "---"
 begin
   get_top_stories.map { |id| get_story_for_id(id) }.each { |story| output(story) }
-rescue => e
+rescue => _
   puts "Content is currently unavailable. Please try resetting. | color=red"
 end
