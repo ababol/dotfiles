@@ -25,7 +25,7 @@
       "exception-reporting"
       "metrics"
     ]
-    hideGitIgnoredFiles: true
+    hideGitIgnoredFiles: false
     ignoredNames: [
       ".bundle"
       ".git"
@@ -61,5 +61,6 @@
   "tabs-to-spaces": {}
   "tree-view":
     hideIgnoredNames: true
+    hideVcsIgnoredFiles: false
   welcome:
     showOnStartup: false
