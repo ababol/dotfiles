@@ -1,0 +1,23 @@
+                                          ==Release notes_Aktiv Grotesk==
+
+Compiler of release notes: Dalton Maag
+Designer: Dalton Maag
+Designer URL: daltonmaag.com
+
+Date of creation: 2014-09-22
+
+Changes since previous release:
+- Arabic, Hebrew, Latin-B, Greek Polytonic and Control Pictures added.
+
+Basic information
+1 Basic family name: Aktiv Grotesk
+2 TrueType Version record: 2.000
+3 Supported scripts: Latin, Greek, Cyrillic, Arabic, Hebrew,
+4 Weights/Styles: Light Italic, Light, Regular, Italic, Medium, Medium Italic, Bold, Bold Italic
+5 Usage: Text and Display
+
+
+Technology
+1 Files formats: The files have been delivered in the TrueType-based OpenType format, for use in all major Operating Systems.
+2 Embedding settings: Editing of the document if allowed.
+3 Hinting information: Level-1 Hinted
