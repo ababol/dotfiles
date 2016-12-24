@@ -20,10 +20,24 @@
   "autocomplete-python":
     useSnippets: "all"
   core:
+    customFileTypes:
+      "source.ini": [
+        ".buckconfig"
+        ".hgrc"
+        ".flowconfig"
+      ]
+      "source.json": [
+        ".arcconfig"
+        "BUCK.autodeps"
+      ]
+      "source.python": [
+        "BUCK"
+      ]
     disabledPackages: [
       "background-tips"
       "exception-reporting"
       "metrics"
+      "tree-view"
     ]
     hideGitIgnoredFiles: false
     ignoredNames: [
@@ -32,8 +46,8 @@
       "log"
       "repositories"
       "tmp"
-      "vendor"
     ]
+    telemetryConsent: "no"
     themes: [
       "one-dark-ui"
       "material-monokai-syntax"
@@ -46,6 +60,42 @@
     softWrap: true
   jsformat:
     format_on_save: false
+  minimap: {}
+  nuclide:
+    "nuclide-adb-logcat": {}
+    "nuclide-arcanist": {}
+    "nuclide-buck": {}
+    "nuclide-clang": {}
+    "nuclide-console": {}
+    "nuclide-datatip": {}
+    "nuclide-debugger-native": {}
+    "nuclide-debugger-node": {}
+    "nuclide-debugger-php": {}
+    "nuclide-definition-preview": {}
+    "nuclide-distraction-free-mode": {}
+    "nuclide-file-tree":
+      revealFileOnSwitch: true
+      showOpenFiles: false
+    "nuclide-flow": {}
+    "nuclide-hack": {}
+    "nuclide-health": {}
+    "nuclide-home": {}
+    "nuclide-ios-simulator-logs": {}
+    "nuclide-notifications": {}
+    "nuclide-ocaml": {}
+    "nuclide-python": {}
+    "nuclide-quick-open": {}
+    "nuclide-react-native": {}
+    "nuclide-related-files": {}
+    "nuclide-remote-projects": {}
+    "nuclide-swift": {}
+    "nuclide-vcs-log": {}
+    "nuclide-working-sets": {}
+    use:
+      "nuclide-blame-provider-hg": false
+      "nuclide-hg-conflict-resolver": false
+      "nuclide-hg-repository": false
+      "nuclide-source-control-side-bar": false
   "one-dark-ui":
     layoutMode: "Compact"
   "python-jedi": {}

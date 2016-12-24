@@ -13,3 +13,5 @@ du -k | sort -nr | awk '
     print $0;
   }
 ' > sort_file.txt
+#sudo du -a / | sort -n -r | head -n 10
+#Only files find -type f -exec du -Sh {} + | sort -rh | head -n 5

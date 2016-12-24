@@ -27,7 +27,6 @@ brew tap caskroom/cask
 brew cask install alfred --appdir="/Applications"
 brew cask install sublime-text3 --appdir="/Applications"
 brew cask install google-chrome --appdir="/Applications"
-brew cask install xtrafinder --appdir="/Applications"
 brew cask install iterm2-beta --appdir="/Applications"
 brew cask install spotify --appdir="/Applications"
 brew cask install cumulus --appdir="/Applications"
