@@ -1,7 +1,5 @@
 # shortcut to this dotfiles path is $DOTFILES
 export DOTFILES=$HOME/.dotfiles
-export DOCKER_HOST=tcp://xprod2.atemerge.com:2376
-export DOCKER_TLS_VERIFY=1s
 export ANDROID_HOME=/usr/local/opt/android-sdk
 export SPENDESK_API_URL="http://spendesk.localtunnel.me"
 

@@ -35,6 +35,7 @@ brew cask install skype --appdir="/Applications"
 brew cask install dropbox --appdir="/Applications"
 brew cask install franz --appdir="/Applications"
 brew cask install sequel-pro --appdir="/Applications"
+brew cask install aerial
 brew cask alfred link
 brew install thefuck
 brew install z
