@@ -3,19 +3,10 @@
     formatOnSave: false
   "atom-material-ui":
     altCmdPalette: false
-    compactTreeView: true
     fonts: {}
     panelContrast: true
-    panels:
-      panelContrast: true
-    rippleAccentColor: true
-    slimScrollbar: true
-    tabSize: "Small"
-    tabs:
-      tabMinWidth: true
-      tabSize: "Small"
-    treeView:
-      compactTreeView: true
+    tabs: {}
+    treeView: {}
     ui: {}
   "autocomplete-python":
     useSnippets: "all"
@@ -37,6 +28,7 @@
       "background-tips"
       "exception-reporting"
       "metrics"
+      "language-babel"
       "tree-view"
     ]
     hideGitIgnoredFiles: false
@@ -49,12 +41,12 @@
     ]
     telemetryConsent: "no"
     themes: [
-      "one-dark-ui"
+      "seti-ui"
       "material-monokai-syntax"
     ]
   editor:
     fontFamily: "Hack"
-    fontSize: 12
+    fontSize: 13
     invisibles: {}
     lineHeight: 1.4
     softWrap: true
@@ -102,6 +94,9 @@
   react: {}
   "release-notes":
     viewedVersion: "0.89.0"
+  "seti-ui":
+    compactView: true
+    font: "Default Atom Font"
   "spell-check":
     grammars: [
       "text.plain"

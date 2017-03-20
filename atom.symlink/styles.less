@@ -56,5 +56,63 @@ atom-workspace .tree-view {
 }
 
 .nuclide-tabs {
-  display: none
+  display: none;
+}
+
+.nuclide-workspace-views-panel-location-tabs {
+  display: none;
+}
+
+.nuclide-file-tree-sidebar-uncommitted-changes {
+  .icon::before {
+    display: none;
+  }
+}
+
+.left.tool-panel.panel-left {
+  // display: none;
+}
+
+.nuclide-file-tree-toolbar-container {
+  background: #151718;
+}
+
+atom-text-editor {
+  background-color: #111313;
+}
+atom-text-editor .gutter, .nuclide-workspace-views-panel-handle.left {
+  background-color: #131414;
+}
+
+.syntax--comment {
+  color: #677d85;
+}
+
+atom-text-editor .gutter {
+  color: rgba(255, 255, 255, .15);
+}
+
+.header.list-item {
+  background: transparent
+}
+
+.nuclide-file-tree-toolbar.nuclide-file-tree-toolbar-fader {
+  display: none;
+}
+atom-workspace-axis.vertical .tab-bar .tab {
+  background-color: #151718;
+}
+atom-text-editor .wrap-guide {
+  background-color: rgba(255, 255, 255, .15);
+}
+atom-text-editor .gutter {
+  min-width: .3em;
+}
+
+.list-group .selected::before, .list-tree .selected::before {
+  background-color: rgb(80, 105, 152);
+}
+
+autocomplete-suggestion-list.select-list.popover-list ol.list-group li.selected {
+  background-color: rgba(255, 255, 255, .1);
 }
