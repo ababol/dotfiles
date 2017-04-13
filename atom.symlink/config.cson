@@ -52,6 +52,8 @@
     softWrap: true
   jsformat:
     format_on_save: false
+  linter: {}
+  "linter-ui-default": {}
   minimap: {}
   nuclide:
     "nuclide-adb-logcat": {}
@@ -64,6 +66,10 @@
     "nuclide-debugger-node": {}
     "nuclide-debugger-php": {}
     "nuclide-definition-preview": {}
+    "nuclide-diagnostics-store":
+      consumeLegacyLinters: false
+      legacyLintOnTheFly: false
+    "nuclide-diagnostics-ui": {}
     "nuclide-distraction-free-mode": {}
     "nuclide-file-tree":
       revealFileOnSwitch: true
